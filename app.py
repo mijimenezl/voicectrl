@@ -10,7 +10,6 @@ import paho.mqtt.client as paho
 import json
 from gtts import gTTS
 from googletrans import Translator
-import base64 
 
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato ha sido publicado \n")
@@ -39,7 +38,7 @@ st.image(image, width=500)
 
 st.write("Toca el Botón y habla... ")
 
-stt_button = Button(label=" Inicio ", width=200)
+stt_button = Button(label=" COMENZAR ", width=500)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
