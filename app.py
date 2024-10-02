@@ -36,19 +36,6 @@ image = Image.open('voice_ctrl.jpg')
 
 st.image(image, width=500)
 
-with open("voice_ctrl.jpg", "rb") as img_file:
-    img_bytes = img_file.read()
-    encoded_image = base64.b64encode(img_bytes).decode("utf-8")
-
-st.markdown(
-    """
-    <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' width='500'>
-    </div>
-    """.format(st.image(image, use_column_width=False, output_format="PNG").encode('utf-8')), 
-    unsafe_allow_html=True
-)
-
 
 st.write("Toca el Botón y habla... ")
 
