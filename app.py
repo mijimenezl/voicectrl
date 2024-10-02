@@ -33,7 +33,7 @@ st.subheader("Talk to Pitbull")
 
 image = Image.open('voice_ctrl.jpg')
 
-st.image(image, width=1000)
+st.image(image, width=500)
 
 
 
