@@ -10,6 +10,7 @@ import paho.mqtt.client as paho
 import json
 from gtts import gTTS
 from googletrans import Translator
+import base64 
 
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato ha sido publicado \n")
@@ -34,6 +35,10 @@ st.subheader("Talk to Pitbull!!")
 image = Image.open('voice_ctrl.jpg')
 
 st.image(image, width=500)
+
+with open("voice_ctrl.jpg", "rb") as img_file:
+    img_bytes = img_file.read()
+    encoded_image = base64.b64encode(img_bytes).decode("utf-8")
 
 st.markdown(
     """
