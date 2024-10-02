@@ -28,8 +28,8 @@ client1.on_message = on_message
 
 
 
-st.title("Control por voz")
-st.subheader("Talk to Pitbull")
+st.title("CONTROL POR VOZ")
+st.subheader("Talk to Pitbull!!")
 
 image = Image.open('voice_ctrl.jpg')
 
@@ -38,7 +38,7 @@ st.image(image, width=500)
 
 
 
-st.write("Toca el Botón y habla ")
+st.write("Toca el Botón y habla... ")
 
 stt_button = Button(label=" Inicio ", width=200)
 
